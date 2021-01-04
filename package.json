@@ -1,0 +1,17 @@
+{
+  "name": "new_social_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start --prefix client",
+    "server": "npm run start --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

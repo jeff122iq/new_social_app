@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "new_social_app",
+      "database": "new_social_app",
+      "username": "bogdan",
+      "password": "bogdan"
+    }
+  ]
+}
