@@ -1,0 +1,39 @@
+.logInForm {
+  animation: fadeInRight 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.logInForm > h1 {
+  color: white;
+  font-size: 45px;
+  margin-top: 0;
+}
+
+.logInForm > input {
+  width: 400px;
+  height: 30px;
+  margin: 5px 0;
+  padding: 0 25px;
+  border: none;
+  outline: none;
+}
+
+.logInForm > button {
+  width: 450px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #90827a;
+  color: white;
+  border: 1.5px solid #90827a;
+  transition: all 0.5s;
+}
+
+.logInForm > button:hover {
+  transition: all 0.5s;
+  background: none;
+  border: 1.5px solid #90827a;
+  color: white;
+}

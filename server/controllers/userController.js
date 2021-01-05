@@ -36,7 +36,7 @@ userController.post("/register", urlencodedParser, async (req, res) => {
 
 // Log-in
 userController.post("/login", urlencodedParser, async function (req, res) {
-  const user = await User.findOne({ where: { email: req.body.email } });
+  const user = await User.findOne({ where: { userName: req.body.userName } });
   if (!user) {
     return res.status(400).json({ message: "Пользователь не найден" });
   }

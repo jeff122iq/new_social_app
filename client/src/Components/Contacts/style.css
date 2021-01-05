@@ -1,0 +1,92 @@
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.contacts {
+  animation: fadeInDown 0.5s;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+.contacts > .container {
+  margin: 0;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts > .container > h1 {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+
+.contacts > .container > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.contacts > .container > ul > .link {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts > .container > ul .link > a {
+  color: white;
+  font-size: 25px;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.contacts > .container > ul .link > i {
+  color: white;
+  font-size: 25px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.contacts > .container > h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 50px;
+  font-size: 20px;
+  margin-top: 5px;
+}

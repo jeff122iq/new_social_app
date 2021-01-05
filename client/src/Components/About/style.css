@@ -1,0 +1,56 @@
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.about {
+  animation: fadeInDown 0.5s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about > .container > h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.about > .container > p {
+  color: white;
+  font-size: 30px;
+  width: 1020px;
+  text-align: center;
+}

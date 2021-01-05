@@ -1,0 +1,53 @@
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.pageFooter {
+  animation-name: slideInUp;
+  animation-duration: 0.5s;
+  width: 100%;
+  padding: 50px 0;
+  background-color: #01112a;
+}
+
+.pageFooter > h4 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.pageFooter > p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 10px;
+}
