@@ -1,6 +1,8 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
+import AuthButtons from "./Components/AuthButtons/AuthButtons";
+import Container from "./Components/Container/Container";
 import Welcome from "./Components/Welcome/Welcome";
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 const Header = React.lazy(() => import("./Components/Header/Header"));
@@ -26,10 +28,7 @@ function App() {
           }
         >
           <Header></Header>
-          <div className="container">
-            <Welcome />
-            <Routes />
-          </div>
+          <Routes />
           <Footer></Footer>
         </Suspense>
       </div>

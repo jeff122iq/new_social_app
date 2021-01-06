@@ -35,52 +35,46 @@
   animation: fadeInDown 0.5s;
   display: flex;
   justify-content: center;
-  margin: 0;
-  width: 100%;
-}
-
-.contacts > .container {
-  margin: 0;
-  width: 30%;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0;
 }
 
-.contacts > .container > h1 {
+.contacts > h1 {
   color: white;
   font-size: 40px;
   margin: 0;
 }
 
-.contacts > .container > ul {
+.contacts > ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
 }
 
-.contacts > .container > ul > .link {
+.contacts > ul > .link {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.contacts > .container > ul .link > a {
+.contacts > ul .link > a {
   color: white;
-  font-size: 25px;
-  margin: 5px 0;
+  font-size: 24px;
+  margin: 5px;
   text-decoration: none;
+  max-width: 400px;
 }
 
-.contacts > .container > ul .link > i {
+.contacts > ul .link > i {
   color: white;
   font-size: 25px;
   margin: 5px;
   text-decoration: none;
 }
 
-.contacts > .container > h2 {
+.contacts > h2 {
   margin: 0;
   padding: 0;
   color: white;
@@ -89,4 +83,25 @@
   margin-bottom: 50px;
   font-size: 20px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 1020px) {
+  .contacts > ul > .link > a {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts > ul > .link > a {
+    font-size: 20px;
+  }
+
+  .contacts > h1 {
+    font-size: 25px;
+  }
+
+  .contacts > h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }

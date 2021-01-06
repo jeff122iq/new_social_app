@@ -1,0 +1,47 @@
+.navBar {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid white;
+}
+
+.navBar > ul > a {
+  margin: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 40px;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+
+.navBar > form {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar > form > button {
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 40px;
+  background: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.navBar > form > button:hover {
+  background-color: #2b6478;
+  transition: all 0.5s;
+}
+
+.navBar > ul > a:hover {
+  background-color: white;
+  color: #001229;
+  transition: all 0.5s;
+}

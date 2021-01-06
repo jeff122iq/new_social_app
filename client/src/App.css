@@ -3,12 +3,13 @@
   width: 100%;
   height: 100vh;
   background-image: url("https://www.gracekennedy.com/wp-content/uploads/2016/12/wallpaper.jpg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   overflow: hidden;
 }
@@ -46,12 +47,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.App > .container {
-  width: 100%;
-  max-width: 70%;
-  margin: 0 200px;
 }
 
 .lds-roller {

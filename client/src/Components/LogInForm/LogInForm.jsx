@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import Axios from "axios";
+import AuthButtons from "../AuthButtons/AuthButtons";
 
 const LogInForm = () => {
   const [password, setPassword] = useState();
@@ -28,6 +29,8 @@ const LogInForm = () => {
   return (
     <form onSubmit={onLogin} className="logInForm">
       <h1>Log-in!</h1>
+      <p>(press Enter to submit)</p>
+      <div className="input"></div>
       <input
         onChange={(event) => setUserName(event.target.value)}
         type="text"
@@ -38,7 +41,7 @@ const LogInForm = () => {
         type="password"
         placeholder="Password"
       />
-      <button>Log-in</button>
+      {/* <button>Log-in</button> */}
     </form>
   );
 };

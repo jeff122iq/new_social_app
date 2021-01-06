@@ -1,7 +1,8 @@
-a {
-  position: relative;
-  top: 30%;
-  color: white;
-  text-decoration: none;
-  margin: 20px;
+.hello > h1 {
+  animation: fadeInLeft 0.5s;
+}
+
+.authorization {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -26,6 +26,7 @@ const RegisterForm = () => {
   return (
     <form onSubmit={onRegister} className="registerForm">
       <h1>Register</h1>
+      <p>(press Enter to submit)</p>
       <input
         onChange={(event) => setUserName(event.target.value)}
         type="text"
@@ -41,9 +42,9 @@ const RegisterForm = () => {
         type="password"
         placeholder="Password"
       />
-      <div className="buttons">
+      {/* <div className="buttons">
         <button onClick={onRegister}>Register</button>
-      </div>
+      </div> */}
     </form>
   );
 };
