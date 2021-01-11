@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Router } from "react-router-dom";
+import { Route } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import "./style.css";
 import MyPage from "../MyPage/MyPage";

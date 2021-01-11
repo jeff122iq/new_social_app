@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RegisterForm from "../RegisterForm/RegisterForm";
 import LogInForm from "../LogInForm/LogInForm";
 import "./style.css";
-import AuthButtons from "../AuthButtons/AuthButtons";
+// import AuthButtons from "../AuthButtons/AuthButtons";
 
-const Authorization = () => {
+const Authorization = (props) => {
+  const setLoggedIn = props.setLoggedIn;
+  const loggedIn = props.loggedIn;
   return (
     <Switch>
       <Router>
@@ -14,10 +16,14 @@ const Authorization = () => {
             Hello! Auth please.
           </h1>
           <div className="authorization">
-            <Route path="/" component={RegisterForm} exact />
-            <Route path="/login" component={LogInForm} exact />
+            <Route path="/" exact>
+              <RegisterForm setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
+            </Route>
+            <Route path="/login" exact>
+              <LogInForm setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
+            </Route>
           </div>
-          <AuthButtons />
+          {/* <AuthButtons /> */}
         </div>
       </Router>
     </Switch>

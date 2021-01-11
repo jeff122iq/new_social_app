@@ -1,0 +1,90 @@
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.headerLoggedIn {
+  animation-name: slideInDown;
+  animation-duration: 0.5s;
+  width: 100%;
+  background-color: #fdc96e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.headerLoggedIn > .container {
+  height: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .headerLoggedIn > .container > h1 > a {
+  margin: 0 50px;
+  transition: all 0.5s;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+}
+
+.headerLoggedIn > .container > h1 > a:hover {
+  transition: all 0.5s;
+  color: #002140;
+}
+
+.headerLoggedIn > .container > ul {
+  padding: 0;
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLoggedIn > .container > ul > a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.headerLoggedIn > .container > ul > a:hover {
+  transition: all 0.5s;
+  color: #002140;
+} */
+
+@media screen and (max-width: 480px) {
+  .headerLoggedIn > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

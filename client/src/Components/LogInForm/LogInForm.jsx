@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import "./style.css";
 import Axios from "axios";
-import AuthButtons from "../AuthButtons/AuthButtons";
+import { Link, useHistory } from "react-router-dom";
 
-const LogInForm = () => {
+const LogInForm = (props) => {
   const [password, setPassword] = useState();
   const [userName, setUserName] = useState();
+  const history = useHistory();
 
   async function onLogin(event) {
+    const setLoggedIn = props.setLoggedIn;
+    const loggedIn = props.loggedIn;
     event.preventDefault();
     try {
       const response = await Axios.post("http://localhost:5000/login", {
@@ -16,8 +19,10 @@ const LogInForm = () => {
       });
       if (response.data) {
         localStorage.setItem("complexappUsername", response.data.userName);
+        localStorage.setItem("AccessToken", response.data.Accesstoken);
         console.log(response.data);
-        // props.setLoggedIn(true);
+        setLoggedIn(!loggedIn);
+        history.push("/is_auth");
       } else {
         console.log("Incorrect data's!");
       }
@@ -41,7 +46,8 @@ const LogInForm = () => {
         type="password"
         placeholder="Password"
       />
-      {/* <button>Log-in</button> */}
+      <button onClick={onLogin}>Log-in</button>
+      <Link to="/">Create page!</Link>
     </form>
   );
 };

@@ -11,7 +11,10 @@ const Authorization = React.lazy(() =>
   import("../Authorization/Authorization")
 );
 
-const Routes = () => {
+const Routes = (props) => {
+  const setLoggedIn = props.setLoggedIn;
+  const loggedIn = props.loggedIn;
+
   return (
     <Switch>
       <Container>
@@ -29,12 +32,29 @@ const Routes = () => {
             </div>
           }
         >
-          <Route path="/" component={Authorization} exact />
-          <Route path="/home" component={Home} exact />
-          <Route path="/about" component={About} exact />
-          <Route path="/login" component={LogInForm} exact />
-          <Route path="/contacts" component={Contacts} exact />
-          <Route path="/is_auth" component={IsAuth} />
+          {loggedIn === false ? (
+            <>
+              {/* <Route path="/" exact>
+                <Authorization setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
+              </Route> */}
+              <Route path="/" exact>
+                <Authorization setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
+              </Route>
+              <Route path="/login" component={LogInForm} exact />
+              <Route path="/home" component={Home} exact />
+              <Route path="/contacts" component={Contacts} exact />
+              <Route path="/about" component={About} exact />
+            </>
+          ) : (
+            <>
+              <Route path="/is_auth" component={IsAuth} exact />
+              {/* <Route path="/is_auth/my_page" component={MyPage} exact />
+              <Route path="/is_auth/messages" component={Messages} exact />
+              <Route path="/is_auth/friends" component={Friends} exact />
+              <Route path="/is_auth/posts" component={Posts} exact />
+              <Route path="/is_auth/settings" component={Settings} exact /> */}
+            </>
+          )}
         </Suspense>
       </Container>
     </Switch>

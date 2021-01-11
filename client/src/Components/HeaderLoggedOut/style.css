@@ -29,7 +29,7 @@
   }
 }
 
-.pageHeader {
+.headerLoggedOut {
   animation-name: slideInDown;
   animation-duration: 0.5s;
   width: 100%;
@@ -40,7 +40,7 @@
   border-bottom: 1px solid white;
 }
 
-.pageHeader > .container {
+.headerLoggedOut > .container {
   height: 100px;
   margin: 0;
   display: flex;
@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-.pageHeader > .container > h1 > a {
+.headerLoggedOut > .container > h1 > a {
   margin: 0 50px;
   transition: all 0.5s;
   color: white;
@@ -56,12 +56,12 @@
   padding: 0;
 }
 
-.pageHeader > .container > h1 > a:hover {
+.headerLoggedOut > .container > h1 > a:hover {
   transition: all 0.5s;
   color: #002140;
 }
 
-.pageHeader > .container > ul {
+.headerLoggedOut > .container > ul {
   padding: 0;
   margin: 0 50px;
   display: flex;
@@ -69,23 +69,22 @@
   align-items: center;
 }
 
-.pageHeader > .container > ul > a {
+.headerLoggedOut > .container > ul > a {
   margin: 0 20px;
   text-decoration: none;
   color: white;
   transition: all 0.5s;
 }
 
-.pageHeader > .container > ul > a:hover {
+.headerLoggedOut > .container > ul > a:hover {
   transition: all 0.5s;
   color: #002140;
 }
 
 @media screen and (max-width: 480px) {
-  .pageHeader > .container {
+  .headerLoggedOut > .container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
   }
 }

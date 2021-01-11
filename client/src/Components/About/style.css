@@ -56,6 +56,7 @@
   .about > {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0;
   }
@@ -73,6 +74,7 @@
   .about {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -88,6 +90,7 @@
 @media screen and (max-width: 480px) {
   .about > {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -109,6 +112,7 @@
   .about > {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
   }
 

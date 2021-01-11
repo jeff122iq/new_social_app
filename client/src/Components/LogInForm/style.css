@@ -81,3 +81,22 @@
   background: none;
   color: white;
 }
+
+.logInForm > a {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration: underline;
+}

@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import Container from "../Container/Container";
 import "./style.css";
 
-const Header = () => {
+const HeaderLoggedOut = (props) => {
   return (
-    <header className="pageHeader">
+    <header className="headerLoggedOut">
       <Container>
         <h1>
           <Link to="/">App</Link>
@@ -20,4 +20,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderLoggedOut;
